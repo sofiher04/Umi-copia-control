@@ -219,7 +219,10 @@ image = Image.open('PhalaenopsisOphrysPaphiopedilumMaxillaria.jpg')
 st.image(image, caption = '¡Orquídeas!')
 
 image = Image.open('Plant_and_pot_masterArtboard137_900x.jpg')
-st.image(image, caption = '¡Orquídeas!')
+st.image(image, caption = '¡Monstera deliciosa!')
+
+image = Image.open('images-4.jpeg')
+st.image(image, caption = '¡Suculentas!')
 
 # Cerrar archivo PDF
 pdfFileObj.close()
