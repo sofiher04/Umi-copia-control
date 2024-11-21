@@ -108,7 +108,7 @@ with st.sidebar:
        
     """
                 )            
-
+     st.link_button("Riega o planta semillas con Umi", "https://control-voz-umi.streamlit.app/")
 st.title('Hola!!! Soy UMI 💬')
 #image = Image.open('Instructor.png')
 #st.image(image)
@@ -208,7 +208,7 @@ with col2:
             
 #          remove_files(7)
 
-st.link_button("Riega o planta semillas con Umi", "https://control-voz-umi.streamlit.app/")
+
 
 # Cerrar archivo PDF
 pdfFileObj.close()
