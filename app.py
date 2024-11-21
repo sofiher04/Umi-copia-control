@@ -208,11 +208,12 @@ with col2:
             
 #          remove_files(7)
 
-# Botón que lleva a un enlace
 st.subheader("Dile a Umi")
 url = "https://control-voz-umi.streamlit.app/"
-if st.button("Ir al enlace"):
-    webbrowser.open_new_tab(url)
+st.markdown(
+    f'<a href="{url}" target="_blank"><button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Ir al enlace</button></a>',
+    unsafe_allow_html=True
+)
 
 # Cerrar archivo PDF
 pdfFileObj.close()
