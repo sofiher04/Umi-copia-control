@@ -210,3 +210,15 @@ with col2:
 # Cerrar archivo PDF
 pdfFileObj.close()
 
+#Botón para ir al control por voz
+
+# Función para abrir el enlace
+def abrir_enlace():
+    webbrowser.open("https://control-voz-umi.streamlit.app/")
+
+# Crear un botón
+boton = tk.Button(ventana, text="Pregúntale a Umi", command=abrir_enlace)
+boton.pack(pady=50)
+
+# Ejecutar la ventana
+ventana.mainloop()
