@@ -208,7 +208,7 @@ with col2:
             
 #          remove_files(7)
 
-st.subheader("Dile a Umi")
+st.button("Dile a Umi")
 url = "https://control-voz-umi.streamlit.app/"
 st.markdown(f"[Ir al enlace]({url})")
 
