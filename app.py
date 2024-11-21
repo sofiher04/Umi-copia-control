@@ -99,9 +99,9 @@ except:
     pass
 
 with st.sidebar:
-    st.subheader("Que es un sistema Experto?")
+    st.subheader("¿Tienes alguna duda?")
     st.write(
-    """UMI resolverá dudas sobre las dudas que tengas.
+    """¡Pregúntale a Umi! Está aquí para ayudarte a cuidar tus plantas.
        
        
     """
@@ -120,7 +120,7 @@ os.environ['OPENAI_API_KEY'] = st.secrets["settings"]["key"] #ke
 
 #st.write(st.secrets["settings"]["key"])
 
-pdfFileObj = open('plantas.pdf', 'rb')
+pdfFileObj = open('Plantas y cuidados.pdf', 'rb')
  
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfReader(pdfFileObj)
