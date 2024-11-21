@@ -210,10 +210,7 @@ with col2:
 
 st.subheader("Dile a Umi")
 url = "https://control-voz-umi.streamlit.app/"
-st.markdown(
-    f'<a href="{url}" target="_blank"><button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Ir al enlace</button></a>',
-    unsafe_allow_html=True
-)
+st.markdown(f"[Ir al enlace]({url})")
 
 # Cerrar archivo PDF
 pdfFileObj.close()
