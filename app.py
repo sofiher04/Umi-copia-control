@@ -149,15 +149,6 @@ embeddings = OpenAIEmbeddings()
 knowledge_base = FAISS.from_texts(chunks, embeddings)
 #Botón para ir al control por voz
 
-# Define el enlace que quieres abrir
-url = "https://control-voz-umi.streamlit.app/"
-
-st.subheader("Riega tu planta")
-
-# Botón para abrir el enlace
-if st.button("Abrir enlace"):
-    webbrowser.open(url)
-
 # Columnas para sensor y pregunta
 col1, col2 = st.columns([1, 2])
 
@@ -217,6 +208,11 @@ with col2:
             
 #          remove_files(7)
 
+# Botón que lleva a un enlace
+st.subheader("Dile a Umi")
+url = "https://control-voz-umi.streamlit.app/"
+if st.button("Ir al enlace"):
+    webbrowser.open_new_tab(url)
 
 # Cerrar archivo PDF
 pdfFileObj.close()
