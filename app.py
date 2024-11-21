@@ -18,6 +18,8 @@ from streamlit_lottie import st_lottie
 import json
 import paho.mqtt.client as mqtt
 import pytz
+#Nuevos
+import webbrowser
 
 MQTT_BROKER = "157.230.214.127"
 MQTT_PORT = 1883
@@ -212,13 +214,12 @@ pdfFileObj.close()
 
 #Botón para ir al control por voz
 
-# Función para abrir el enlace
-def abrir_enlace():
-    webbrowser.open("https://control-voz-umi.streamlit.app/")
+# Define el enlace que quieres abrir
+url = "https://control-voz-umi.streamlit.app/"
 
-# Crear un botón
-boton = tk.Button(ventana, text="Pregúntale a Umi", command=abrir_enlace)
-boton.pack(pady=50)
+st.subheader("Riega tu planta")
 
-# Ejecutar la ventana
-ventana.mainloop()
+# Botón para abrir el enlace
+if st.button("Abrir enlace"):
+    webbrowser.open(url)
+
