@@ -208,9 +208,7 @@ with col2:
             
 #          remove_files(7)
 
-st.button("Dile a Umi")
-url = "https://control-voz-umi.streamlit.app/"
-st.markdown(f"[Ir al enlace]({url})")
+st.link_button("Riega o planta semillas con Umi", "https://control-voz-umi.streamlit.app/")
 
 # Cerrar archivo PDF
 pdfFileObj.close()
