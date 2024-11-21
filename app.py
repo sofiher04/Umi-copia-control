@@ -211,10 +211,14 @@ with col2:
 #          remove_files(7)
 
 #Galería
+st.subheader("Compara tu planta con estas imágenes para identificarlas")
 image = Image.open('images-3.jpeg')
 st.image(image, caption = '¡Cactus!')
 
 image = Image.open('PhalaenopsisOphrysPaphiopedilumMaxillaria.jpg')
+st.image(image, caption = '¡Orquídeas!')
+
+image = Image.open('Plant_and_pot_masterArtboard137_900x.jpg')
 st.image(image, caption = '¡Orquídeas!')
 
 # Cerrar archivo PDF
