@@ -214,6 +214,9 @@ with col2:
 image = Image.open('images-3.jpeg')
 st.image(image, caption = '¡Cactus!')
 
+image = Image.open('PhalaenopsisOphrysPaphiopedilumMaxillaria.jpg')
+st.image(image, caption = '¡Orquídeas!')
+
 # Cerrar archivo PDF
 pdfFileObj.close()
 
