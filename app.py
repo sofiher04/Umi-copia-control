@@ -104,7 +104,6 @@ except:
 
 with st.sidebar:
     st.subheader("¿Tienes alguna duda?")
-    st.link_button("Riega o planta semillas con Umi", "https://control-voz-umi.streamlit.app/")
     st.write(
     """¡Pregúntale a Umi! Está aquí para ayudarte a cuidar tus plantas.
        
