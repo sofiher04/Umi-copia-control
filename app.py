@@ -22,9 +22,6 @@ import pytz
 import webbrowser
 from PIL import Image
 
-image = Image.open('images-3.jpeg')
-
-st.image(image, caption = '¡Cactus!')
 
 MQTT_BROKER = "157.230.214.127"
 MQTT_PORT = 1883
@@ -213,7 +210,9 @@ with col2:
             
 #          remove_files(7)
 
-
+#Galería
+image = Image.open('images-3.jpeg')
+st.image(image, caption = '¡Cactus!')
 
 # Cerrar archivo PDF
 pdfFileObj.close()
